@@ -39,7 +39,8 @@ body {
 	margin: 0;
 	color: #fff;
 
-	background-image: linear-gradient(45deg , #2a2b30 ,#E56B1F 50%, #FCD02C 50%, #2a2b30);
+	/*background-image: linear-gradient(45deg , #2a2b30 ,#F3E367 50%, #929D9E 50%, #2a2b30);*/
+	background-image: url('../img/back7.png');
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -91,7 +92,7 @@ a:hover {
 	text-indent: 3px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	color: #5c5edc;
+	color: #25FFFF;
 }
 
 .bp-tooltip:after {
@@ -118,7 +119,7 @@ a:hover {
 	letter-spacing: 0;
 	text-transform: none;
 	color: #fff;
-	background: #5c5edc;
+	background: #25FFFF;
 }
 
 .bp-nav {
@@ -150,11 +151,11 @@ a:hover {
 	width: 600%;
 	text-align: right;
 	pointer-events: none;
-	color: #595a5f;
+	color: #fff;
 }
 
 .bp-nav__item:hover {
-	background: #5c5edc;
+	background: #25FFFF;
 }
 
 .bp-icon:after {
@@ -164,7 +165,7 @@ a:hover {
 	font-variant: normal;
 	text-align: center;
 	text-transform: none;
-	color: #5c5edc;
+	color: #25FFFF;
 	-webkit-font-smoothing: antialiased;
 	speak: none;
 }
@@ -219,8 +220,8 @@ a:hover {
 	height: 120px;
 	padding: 1em 0 0 0;
 	text-align: center;
-	color: #3b3d4a;
-	background: #1c1d22;
+	color: #fff;
+	background: #260538;
 }
 
 .dummy-icon {
@@ -263,7 +264,8 @@ h5 {
 }
 
 .product {
-	border: 1px solid white;
+	box-shadow: 0 0 25px 0 #c81854, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+	border: 1px solid #c81854;
 	display: inline-block;
 	width: 310px;
 	height: 550px;
@@ -273,7 +275,8 @@ h5 {
 }
 
 .product .top img{
-	border: 1px solid white;
+	box-shadow: 0 0 25px 0 #c81854, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+	border: 1px solid #c81854;;
 	display: inline-block;
 	width: 290px;
 	height: 300px;
@@ -352,6 +355,7 @@ h5 {
 }
 
 .fourth {
+	box-shadow: 0 0 25px 0 #c81854, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
 	margin-top: 1px;
 	/* text-align: center; */
 	margin-left: 80px;
@@ -384,11 +388,11 @@ body #cdawrap {
 }
 
 body #cdawrap .carbon-text {
-	color: #505158;
+	color: #fff;
 }
 
 body #cdawrap a.carbon-poweredby {
-	color: #7883c4;
+	color: #25FFFF;
 }
 
 body #cdawrap a:hover.carbon-poweredby {
@@ -416,3 +420,133 @@ body #cdawrap a:hover.carbon-poweredby {
 		overflow: auto;
 	}
 }
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+/** {*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*box-sizing: border-box;*/
+/*}*/
+/*html, body {*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+/*}*/
+/*body {*/
+	/*background: #252525;*/
+/*}*/
+.container_input {
+	position: relative;
+	margin: auto;
+	margin-top: 25px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 300px;
+	height: 100px;
+}
+.container_input .search {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	background: #c81854;
+	border-radius: 50%;
+	transition: all 1s;
+	z-index: 4;
+	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+.container_input .search:hover {
+	cursor: pointer;
+}
+.container_input .search::before {
+	content: "";
+	position: absolute;
+	margin: auto;
+	top: 22px;
+	right: 0;
+	bottom: 0;
+	left: 22px;
+	width: 12px;
+	height: 2px;
+	background: white;
+	transform: rotate(45deg);
+	transition: all 0.5s;
+}
+.container_input .search::after {
+	content: "";
+	position: absolute;
+	margin: auto;
+	top: -5px;
+	right: 0;
+	bottom: 0;
+	left: -5px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 2px solid white;
+	transition: all 0.5s;
+}
+.container_input input {
+	font-family: 'Inconsolata', monospace;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+	background: #25FFFF;
+	color: black;
+	text-shadow: 0 0 10px #25FFFF;
+	padding: 0 80px 0 20px;
+	border-radius: 30px;
+	box-shadow: 0 0 25px 0 #25FFFF, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+	transition: all 1s;
+	opacity: 0;
+	z-index: 5;
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+}
+.container_input input:hover {
+	cursor: pointer;
+}
+.container_input input:focus {
+	width: 300px;
+	opacity: 1;
+	cursor: text;
+}
+.container_input input:focus ~ .search {
+	right: -250px;
+	background: #151515;
+	z-index: 6;
+}
+.container_input input:focus ~ .search::before {
+	top: 0;
+	left: 0;
+	width: 25px;
+}
+.container_input input:focus ~ .search::after {
+	top: 0;
+	left: 0;
+	width: 25px;
+	height: 2px;
+	border: none;
+	background: white;
+	border-radius: 0%;
+	transform: rotate(-45deg);
+}
+.container_input input::placeholder {
+	color: white;
+	opacity: 0.5;
+	font-weight: bolder;
+}
+
+
